@@ -1,5 +1,5 @@
 """
-My solution to the 6 LeetCode's problem.
+My solution to the 6 LeetCode's problem in Python.
 
 Runtime: 42 ms
 Allocated memory: 16.80 MB
