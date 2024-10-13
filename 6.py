@@ -10,6 +10,9 @@ https://leetcode.com/problems/zigzag-conversion/description/
 
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
+        if numRows == 1:
+            return s
+
         zigzag_strings = ['']*numRows
         
         row = -1

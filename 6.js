@@ -14,15 +14,12 @@ https://leetcode.com/problems/zigzag-conversion/description/
  * @return {string}
  */
 const convert = (s, numRows) => {
+    if (numRows == 1) { return s; }
     var zigzagStrings = Array(numRows).fill('');
     var row = -1;
     var up = false;
     for (let c of s) {
-        if (numRows == 1){
-            row = 0;
-        } else {
-            row += up ? -1 : 1;
-        }
+        row += up ? -1 : 1;
         
         zigzagStrings[row] = `${zigzagStrings[row]}${c}`;
         if (!up && row >= numRows-1){
