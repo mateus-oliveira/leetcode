@@ -29,9 +29,8 @@ class Solution:
             
             if n > nums[i]:
                 gt_pos = self.right_index(nums, n)
-                lower = nums[i]
                 s = s[:i] + str(n) + s[i + 1:]
-                s = s[:gt_pos] + str(lower) + s[gt_pos + 1:]
+                s = s[:gt_pos] + str(nums[i]) + s[gt_pos + 1:]
                 break
 
         return int(s)
