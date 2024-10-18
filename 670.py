@@ -30,8 +30,6 @@ class Solution:
             if n > nums[i]:
                 gt_pos = self.right_index(nums, n)
                 lower = nums[i]
-                nums[i] = n
-                nums[gt_pos] = lower
                 s = s[:i] + str(n) + s[i + 1:]
                 s = s[:gt_pos] + str(lower) + s[gt_pos + 1:]
                 break
