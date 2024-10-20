@@ -10,13 +10,13 @@ https://leetcode.com/problems/parsing-a-boolean-expression/description/
 """
 
 class Solution:
+    def __init__(self):
+        self.expressions = {'&': self._and, '|': self._or, '!': self._not}
+
     def parseBoolExpr(self, expression: str) -> bool:
         if len(expression) == 1:
             return expression == 't'
-
-        expressions = {'&': self._and, '|': self._or, '!': self._not}
-        
-        return expressions[expression[0]](expression)
+        return self.expressions[expression[0]](expression)
         
     def _and(self, expression: str) -> bool:
         sub_exprs = self.split_expression(expression)
