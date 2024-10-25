@@ -1,5 +1,5 @@
 """
-My solution to the 951 LeetCode's problem, a challenge from 25th October 2024.
+My solution to the 951 LeetCode's problem, a challenge from 24th October 2024.
 
 Runtime: 0 ms
 Allocated memory: 16.6 MB
