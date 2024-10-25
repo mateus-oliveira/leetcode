@@ -12,7 +12,7 @@ class Solution:
     def removeSubfolders(self, folder: List[str]) -> List[str]:
         folder.sort()
         folders = [folder[0]]
-        for f in folder:
+        for f in folder[1::]:
             if f == folders[-1] or f.startswith(f'{folders[-1]}/'):
                 continue
             folders.append(f)
