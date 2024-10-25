@@ -3,7 +3,7 @@ My solution to the 1233 LeetCode's problem, a challenge from 25th October 2024.
 
 Runtime: 20 ms
 Allocated memory: 29.5 MB
-Complexity: O(n)
+Complexity: O(n log n)
 
 https://leetcode.com/problems/remove-sub-folders-from-the-filesystem/description/
 """
