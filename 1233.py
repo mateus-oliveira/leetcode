@@ -13,7 +13,7 @@ class Solution:
         folder.sort()
         folders = [folder[0]]
         for f in folder[1::]:
-            if f == folders[-1] or f.startswith(f'{folders[-1]}/'):
+            if f.startswith(f'{folders[-1]}/'):
                 continue
             folders.append(f)
         return folders
